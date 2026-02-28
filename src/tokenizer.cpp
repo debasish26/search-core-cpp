@@ -1,3 +1,33 @@
+/*
+Tokenizer :
+TODO (Future Improvements):
+
+1. Replace ASCII-only alnum logic with full UTF-8 / Unicode-aware tokenization.
+2. Preserve meaningful tokens like "C++", "e-mail", "don't", "3.14".
+3. Add optional stopword filtering (the, is, and, of, etc.).
+4. Add stemming / lemmatization (running -> run, dogs -> dog).
+5. Convert to streaming architecture (process large files without loading entire document).
+6. Benchmark and optimize allocations (reserve, string_view, memory pooling).
+7. Consider parallel tokenization for very large datasets.
+
+Current version: ASCII-based, lowercase normalization, Θ(N) time, O(N) space.
+
+✔ Character scanning
+✔ Lowercasing
+✔ Word splitting
+
+You do NOT yet have:
+
+❌ Streaming
+❌ Filter stage
+❌ Stopwords
+❌ Stemming
+❌ Unicode handling
+❌ Pipeline architecture
+
+*/
+
+
 #include<vector>
 #include<string>
 #include<cctype>
@@ -35,19 +65,3 @@ vector<string> tokenizer(string &text){
     return tokens;
 }
 
-
-/*
-Tokenizer :
-TODO (Future Improvements):
-
-1. Replace ASCII-only alnum logic with full UTF-8 / Unicode-aware tokenization.
-2. Preserve meaningful tokens like "C++", "e-mail", "don't", "3.14".
-3. Add optional stopword filtering (the, is, and, of, etc.).
-4. Add stemming / lemmatization (running -> run, dogs -> dog).
-5. Convert to streaming architecture (process large files without loading entire document).
-6. Benchmark and optimize allocations (reserve, string_view, memory pooling).
-7. Consider parallel tokenization for very large datasets.
-
-Current version: ASCII-based, lowercase normalization, Θ(N) time, O(N) space.
-
-*/

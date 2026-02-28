@@ -2,28 +2,35 @@
 #include "../include/tokenizer.h"
 #include <fstream>
 #include <vector>
+#include<chrono>
 using namespace std;
 
 #define nl '\n'
 
 int main() {
-    ifstream file("../data/article1.txt");
-    string s;
-    
-    vector<string> tokens;
-    while(getline(file,s)){
-        vector<string> token = tokenizer(s);
-        for(auto x:token){
-            tokens.push_back(x);
-        }
-    }
 
-    for(auto x: tokens){
-        cout<<x<<" ";
+    ifstream file("../data/2MB.txt");
+    string s = "";
+    string line;
+    while(getline(file,line)){
+        s += line;
+        s += nl;
     }
-    cout<<nl;
     
-    
+    auto start = chrono::high_resolution_clock::now();
+    vector<string> tokens = tokenizer(s);
+
+    auto end = chrono::high_resolution_clock::now();
+
+    chrono::duration<double, milli> elapsed = end - start;
+
+    // for(auto x: tokens){
+    //     cout<<x<<" ";
+    // }
+    // cout<<nl;
+
+    cout << "Time: " << elapsed.count() << " ms" << nl;
+    cout << "Token count: " << tokens.size() << nl;
 
     return 0;
 }
