@@ -10,10 +10,10 @@
 #include "../include/tokenizer.h"
 #include "../include/frequency.h"
 
-/*-------------------------------------------------------------------------*/
 using namespace std;
 #define nl '\n'
 
+/*-------------------------------------------------------------------------*/
 int main() {
 
     ifstream file("../data/article1.txt");
@@ -39,21 +39,29 @@ int main() {
     
 
 
-    cout << "Time: " << elapsed.count() << " ms" << nl;
-    cout << "Token count: " << tokens.size() << nl;
-
     auto freqstart = chrono::high_resolution_clock::now();
     unordered_map<string,int>frequencies = frequency(tokens);
     auto freqend = chrono::high_resolution_clock::now();
     chrono::duration<double,milli>e = freqend - freqstart;
 
-    // for(auto i:frequencies){
-    //     cout<<"["<<i.first<<" "<<i.second<<"]"<<" ";    
-    // }
-    // cout<<nl;
-    
+    for(auto i:frequencies){
+        cout<<"["<<i.first<<" "<<i.second<<"]"<<" ";    
+    }
+    cout<<nl;
+
+
+
+    cout<<"-- Bench Marks --"<<nl;
+    cout<<nl;
+    cout << "Time: " << elapsed.count() << " ms" << nl;
+    cout << "Token count: " << tokens.size() << nl;
+
+    cout<<nl;
+
     cout<<"Frequency Count: "<<e.count()<<" ms"<<nl;
     cout<<"Size of frequency vector: "<<frequencies.size()<<nl;
+    cout<<nl;
+    cout<<"-- ------------ --"<<nl;
 
     return 0;
 }
