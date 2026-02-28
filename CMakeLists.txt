@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_executable(app
     src/main.cpp
     src/tokenizer.cpp
+    src/frequency.cpp
 )
 
 target_include_directories(app PRIVATE include)
