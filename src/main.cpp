@@ -16,52 +16,79 @@ using namespace std;
 /*-------------------------------------------------------------------------*/
 int main() {
 
-    ifstream file("../data/article1.txt");
+    const string filename = "../test/huge.txt";
+    ifstream file(filename);
     string s = "";
     string line;
     while(getline(file,line)){
         s += line;
         s += nl;
     }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Bench Marks Counting */
+
     auto start = chrono::high_resolution_clock::now();
     vector<string> tokens = tokenizer(s);
-
     auto end = chrono::high_resolution_clock::now();
 
-    chrono::duration<double, milli> elapsed = end - start;
-
-    
-    // for(auto x: tokens){
-    //     cout<<x<<" ";
-    // }
-    // cout<<nl;
-    
+    chrono::duration<double, milli> tokenizer_time = end - start;
 
 
     auto freqstart = chrono::high_resolution_clock::now();
-    unordered_map<string,int>frequencies = frequency(tokens);
+    unordered_map<string,int> frequencies = frequency(tokens);
     auto freqend = chrono::high_resolution_clock::now();
-    chrono::duration<double,milli>e = freqend - freqstart;
 
-    for(auto i:frequencies){
-        cout<<"["<<i.first<<" "<<i.second<<"]"<<" ";    
-    }
-    cout<<nl;
+    chrono::duration<double,milli> frequency_time = freqend - freqstart;
 
 
+    auto& fr = frequencies;
 
-    cout<<"-- Bench Marks --"<<nl;
-    cout<<nl;
-    cout << "Time: " << elapsed.count() << " ms" << nl;
-    cout << "Token count: " << tokens.size() << nl;
+    cout << nl;
 
-    cout<<nl;
+    /* Bench Marks Displaying*/
+    cout << "================ HASH TABLE BENCHMARK ================" << nl << nl;
 
-    cout<<"Frequency Count: "<<e.count()<<" ms"<<nl;
-    cout<<"Size of frequency vector: "<<frequencies.size()<<nl;
-    cout<<nl;
-    cout<<"-- ------------ --"<<nl;
+    cout << "Input File        : " << filename << nl;
+    cout << "Tokens Processed  : " << tokens.size() << nl;
+    cout << "Unique Words      : " << fr.size() << nl;
+
+    cout << nl;
+    cout << "--------------- Tokenization ----------------" << nl;
+    cout << "Tokenizer Time    : " << tokenizer_time.count() << " ms" << nl;
+
+    cout << nl;
+    cout << "--------------- Frequency Build -------------" << nl;
+    cout << "Frequency Time    : " << frequency_time.count() << " ms" << nl;
+
+    cout << nl;
+    cout << "--------------- Hash Table Stats ------------" << nl;
+    cout << "Bucket Count      : " << fr.bucket_count() << nl;
+    cout << "Load Factor       : " << fr.load_factor() << nl;
+    cout << "Max Load Factor   : " << fr.max_load_factor() << nl;
+
+    cout << nl;
+    cout << "======================================================" << nl;
 
     return 0;
 }
