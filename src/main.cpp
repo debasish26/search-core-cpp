@@ -13,6 +13,10 @@
 using namespace std;
 #define nl '\n'
 
+
+/* Global Variables */
+
+// Inverted Index is a data structure use to find which files containes that specific word used in search engine,dbms
 unordered_map<string,vector<pair<int,int>>>inverted_index;
 vector<string>documents;
 
