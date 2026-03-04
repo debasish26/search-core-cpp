@@ -1,0 +1,13 @@
+Title : History of the Internet
+
+The Internet is a global network of interconnected computers that enables the exchange of information across the world. Its origins can be traced back to research projects in the late twentieth century that aimed to create resilient communication networks.
+
+One of the earliest systems was ARPANET, developed by researchers in the United States. ARPANET demonstrated that computers at different locations could communicate using packet switching, a method of breaking messages into small units that travel independently across the network.
+
+Over time, additional networks were developed and connected together. The introduction of standardized protocols such as TCP and IP allowed these networks to interoperate and form what eventually became known as the Internet.
+
+The invention of the World Wide Web in the early 1990s transformed the Internet into a platform for sharing documents and multimedia content. Web browsers made it easy for users to navigate between pages using hyperlinks.
+
+Today the Internet supports a vast range of services, including email, social media, streaming video, and cloud computing. It has become an essential infrastructure for communication, commerce, education, and entertainment.
+
+As the Internet continues to evolve, new technologies such as distributed systems, edge computing, and artificial intelligence are shaping its future.

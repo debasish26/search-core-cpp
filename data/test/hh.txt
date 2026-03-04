@@ -1,0 +1,525 @@
+multimedia -->{article5.txt 1}
+across -->{article5.txt 2}
+platform -->{article5.txt 1}
+1990s -->{article5.txt 1}
+early -->{article5.txt 1}
+known -->{article5.txt 1}
+social -->{article5.txt 1}
+invention -->{article5.txt 1}
+became -->{article5.txt 1}
+interoperate -->{article5.txt 1}
+ip -->{article5.txt 1}
+media -->{article5.txt 1}
+independently -->{article5.txt 1}
+travel -->{article5.txt 1}
+hyperlinks -->{article5.txt 1}
+breaking -->{article5.txt 1}
+packet -->{article5.txt 1}
+could -->{article5.txt 1}
+locations -->{article5.txt 1}
+entertainment -->{article5.txt 1}
+services -->{article5.txt 1}
+allowed -->{article5.txt 1}
+transformed -->{article5.txt 1}
+enables -->{article5.txt 1}
+email -->{article5.txt 1}
+late -->{article5.txt 1}
+standardized -->{article5.txt 1}
+additional -->{article5.txt 1}
+infrastructure -->{article5.txt 1}
+earliest -->{article5.txt 1}
+network -->{article5.txt 2}
+aimed -->{article5.txt 1}
+including -->{article5.txt 1}
+computers -->{article5.txt 2}
+messages -->{article5.txt 1}
+wide -->{article5.txt 1}
+arpanet -->{article5.txt 2}
+introduction -->{article5.txt 1}
+researchers -->{article5.txt 1}
+states -->{article5.txt 1}
+vast -->{article5.txt 1}
+made -->{article5.txt 1}
+pages -->{article5.txt 1}
+easy -->{article5.txt 1}
+become -->{article5.txt 1}
+efficiently -->{article4.txt 1}
+structure -->{article4.txt 1}
+tables -->{article4.txt 1}
+lists -->{article4.txt 1}
+linked -->{article4.txt 1}
+documents -->{article4.txt 1} {article5.txt 1}
+structures -->{article4.txt 1}
+increases -->{article4.txt 1}
+size -->{article4.txt 1}
+tcp -->{article5.txt 1}
+how -->{article4.txt 2}
+running -->{article4.txt 1}
+problem -->{article4.txt 2}
+analysis -->{article4.txt 1}
+research -->{article5.txt 1}
+growth -->{article4.txt 1}
+describe -->{article4.txt 1}
+complexity -->{article4.txt 2}
+crucial -->{article4.txt 1}
+design -->{article4.txt 1}
+central -->{article4.txt 1}
+procedures -->{article4.txt 1}
+datasets -->{article4.txt 2}
+o -->{article4.txt 1}
+particular -->{article4.txt 1}
+was -->{article2.txt 1} {article5.txt 1}
+outer -->{article2.txt 1}
+study -->{article2.txt 1} {article4.txt 1}
+place -->{article2.txt 1}
+influenced -->{article3.txt 1}
+investing -->{article3.txt 1}
+protocols -->{article5.txt 1}
+nature -->{article2.txt 1}
+scientific -->{article2.txt 1} {article3.txt 1}
+web -->{article5.txt 2}
+payloads -->{article2.txt 1}
+our -->{article2.txt 2}
+content -->{article5.txt 1}
+mid -->{article2.txt 1}
+memory -->{article4.txt 1}
+playing -->{article2.txt 1}
+reusable -->{article2.txt 1}
+rockets -->{article2.txt 1}
+music -->{article1.txt 1}
+of -->{article1.txt 8} {article2.txt 9} {article3.txt 3} {article4.txt 6} {article5.txt 8}
+within -->{article2.txt 1} {article4.txt 1}
+rely -->{article1.txt 2}
+launching -->{article2.txt 1}
+areas -->{article1.txt 1} {article4.txt 1}
+navigate -->{article5.txt 1}
+successful -->{article1.txt 1}
+computations -->{article4.txt 1}
+new -->{article2.txt 2} {article4.txt 1} {article5.txt 1}
+eventually -->{article2.txt 1} {article5.txt 1}
+automation -->{article1.txt 1}
+images -->{article1.txt 1}
+expands -->{article2.txt 1}
+communication -->{article2.txt 1} {article5.txt 2}
+despite -->{article1.txt 1}
+earth -->{article2.txt 1} {article3.txt 1}
+interconnected -->{article5.txt 1}
+ice -->{article3.txt 1}
+projects -->{article5.txt 1}
+began -->{article2.txt 1}
+browsers -->{article5.txt 1}
+include -->{article1.txt 1} {article3.txt 1}
+already -->{article1.txt 1} {article3.txt 1}
+users -->{article1.txt 1} {article5.txt 1}
+discover -->{article1.txt 1}
+milestones -->{article2.txt 1}
+commerce -->{article5.txt 1}
+extreme -->{article3.txt 1}
+centuries -->{article2.txt 1}
+title -->{article1.txt 1} {article2.txt 1} {article3.txt 1} {article4.txt 1} {article5.txt 1}
+successfully -->{article2.txt 1}
+recommendation -->{article1.txt 1}
+big -->{article4.txt 1}
+spacecraft -->{article2.txt 1}
+natural -->{article1.txt 2} {article3.txt 1}
+on -->{article1.txt 4} {article2.txt 4} {article3.txt 1} {article4.txt 1}
+sharing -->{article5.txt 1}
+throughout -->{article3.txt 1}
+as -->{article1.txt 3} {article2.txt 1} {article3.txt 2} {article4.txt 4} {article5.txt 4}
+presence -->{article2.txt 1}
+software -->{article4.txt 1}
+advances -->{article2.txt 1}
+complex -->{article1.txt 1}
+address -->{article3.txt 1}
+are -->{article1.txt 1} {article2.txt 1} {article3.txt 6} {article4.txt 1} {article5.txt 1}
+to -->{article1.txt 4} {article2.txt 4} {article3.txt 8} {article4.txt 5} {article5.txt 5}
+inspires -->{article2.txt 1}
+than -->{article1.txt 1}
+change -->{article3.txt 6}
+supports -->{article5.txt 1}
+between -->{article1.txt 1} {article5.txt 1}
+issues -->{article1.txt 1}
+saturn -->{article2.txt 1}
+many -->{article1.txt 3} {article3.txt 1}
+neural -->{article1.txt 1}
+determines -->{article4.txt 1}
+science -->{article1.txt 1} {article2.txt 2} {article4.txt 1}
+such -->{article1.txt 2} {article2.txt 1} {article3.txt 2} {article4.txt 2} {article5.txt 2}
+driven -->{article3.txt 1}
+telescopes -->{article2.txt 2}
+astronauts -->{article2.txt 1}
+a -->{article1.txt 1} {article2.txt 2} {article4.txt 4} {article5.txt 4}
+impact -->{article1.txt 1}
+apollo -->{article2.txt 1}
+likely -->{article1.txt 1}
+cost -->{article2.txt 1}
+predictions -->{article1.txt 1} {article4.txt 1}
+life -->{article2.txt 2}
+make -->{article1.txt 2}
+used -->{article1.txt 1} {article4.txt 2}
+uses -->{article1.txt 2}
+companies -->{article2.txt 1}
+decisions -->{article1.txt 2}
+small -->{article5.txt 1}
+human -->{article1.txt 2} {article2.txt 2} {article3.txt 1}
+system -->{article1.txt 1} {article2.txt 1}
+with -->{article1.txt 2} {article2.txt 1} {article3.txt 1}
+powerful -->{article1.txt 1}
+diseases -->{article1.txt 1}
+subset -->{article1.txt 1}
+information -->{article5.txt 1}
+being -->{article1.txt 1} {article3.txt 1}
+programs -->{article2.txt 1}
+amounts -->{article1.txt 1}
+medical -->{article1.txt 1}
+ai -->{article1.txt 3}
+orbit -->{article2.txt 1}
+notation -->{article4.txt 1}
+rovers -->{article2.txt 1}
+around -->{article2.txt 1}
+growing -->{article2.txt 1}
+significantly -->{article3.txt 1}
+relies -->{article4.txt 1}
+rates -->{article4.txt 1}
+appropriate -->{article4.txt 1}
+analyzing -->{article1.txt 2}
+using -->{article2.txt 1} {article5.txt 2}
+for -->{article2.txt 2} {article3.txt 2} {article4.txt 1} {article5.txt 3}
+temperatures -->{article3.txt 1}
+systems -->{article1.txt 4} {article2.txt 1} {article4.txt 2} {article5.txt 2}
+widely -->{article1.txt 1}
+continues -->{article4.txt 1} {article5.txt 1}
+their -->{article1.txt 1}
+dramatically -->{article2.txt 1} {article4.txt 1}
+machine -->{article1.txt 3} {article4.txt 1}
+building -->{article1.txt 1}
+edge -->{article5.txt 1}
+language -->{article1.txt 2}
+will -->{article1.txt 2}
+products -->{article1.txt 1}
+making -->{article1.txt 1}
+input -->{article4.txt 1}
+autonomous -->{article1.txt 1}
+vehicles -->{article1.txt 1}
+understanding -->{article1.txt 1}
+computer -->{article1.txt 2} {article4.txt 2}
+jupiter -->{article2.txt 1}
+what -->{article5.txt 1}
+technologies -->{article2.txt 1} {article3.txt 1} {article5.txt 1}
+education -->{article5.txt 1}
+analyze -->{article2.txt 1} {article4.txt 1}
+help -->{article1.txt 1}
+closer -->{article1.txt 1}
+use -->{article1.txt 1}
+humans -->{article1.txt 2} {article2.txt 2}
+data -->{article1.txt 4} {article4.txt 5}
+intelligent -->{article1.txt 1}
+universe -->{article2.txt 2}
+productivity -->{article1.txt 1}
+looked -->{article2.txt 1}
+techniques -->{article4.txt 1}
+era -->{article2.txt 1}
+order -->{article4.txt 1}
+experience -->{article1.txt 2}
+prevent -->{article3.txt 1}
+collaboration -->{article1.txt 1}
+its -->{article1.txt 1} {article5.txt 2}
+serve -->{article1.txt 1}
+trees -->{article4.txt 1}
+step -->{article4.txt 2}
+recognition -->{article1.txt 1}
+stars -->{article2.txt 1}
+also -->{article1.txt 1} {article2.txt 1}
+enhance -->{article1.txt 1}
+term -->{article3.txt 1}
+have -->{article2.txt 3} {article3.txt 1}
+important -->{article1.txt 1} {article2.txt 1}
+working -->{article3.txt 1}
+problems -->{article1.txt 1} {article4.txt 1}
+questions -->{article1.txt 1}
+allow -->{article2.txt 1}
+index -->{article4.txt 1}
+scale -->{article4.txt 1}
+involve -->{article1.txt 1}
+different -->{article5.txt 1}
+can -->{article4.txt 2} {article5.txt 1}
+tasks -->{article1.txt 2}
+intelligence -->{article1.txt 7} {article4.txt 1} {article5.txt 1}
+video -->{article5.txt 1}
+diagnosing -->{article1.txt 1}
+warming -->{article3.txt 1}
+raises -->{article1.txt 1}
+organize -->{article4.txt 1}
+doctors -->{article1.txt 1}
+programmed -->{article1.txt 1}
+recognizing -->{article1.txt 1}
+internet -->{article5.txt 6}
+artificial -->{article1.txt 6} {article2.txt 1} {article4.txt 1} {article5.txt 1}
+model -->{article1.txt 1}
+has -->{article1.txt 1} {article5.txt 1}
+time -->{article4.txt 2} {article5.txt 1}
+capabilities -->{article1.txt 1} {article2.txt 1}
+processing -->{article1.txt 1} {article4.txt 2}
+heavily -->{article1.txt 1}
+evolve -->{article4.txt 1} {article5.txt 1}
+past -->{article2.txt 1}
+focuses -->{article1.txt 1} {article3.txt 1}
+machines -->{article1.txt 2}
+bias -->{article1.txt 1}
+through -->{article1.txt 1} {article3.txt 1}
+algorithm -->{article4.txt 4}
+learning -->{article1.txt 6} {article4.txt 1}
+united -->{article5.txt 1}
+these -->{article1.txt 1} {article2.txt 1} {article3.txt 1} {article4.txt 1} {article5.txt 1}
+performance -->{article4.txt 1}
+ethical -->{article1.txt 1}
+rather -->{article1.txt 1}
+in -->{article1.txt 7} {article2.txt 4} {article3.txt 4} {article4.txt 6} {article5.txt 3}
+or -->{article4.txt 2}
+performing -->{article1.txt 1}
+relationships -->{article1.txt 1}
+reducing -->{article3.txt 2}
+employment -->{article1.txt 1}
+algorithms -->{article1.txt 2} {article4.txt 8}
+benefit -->{article2.txt 1}
+locate -->{article4.txt 1}
+explicitly -->{article1.txt 1}
+industries -->{article1.txt 1}
+materials -->{article2.txt 1}
+wondered -->{article2.txt 1}
+specific -->{article4.txt 1}
+environment -->{article1.txt 1}
+climate -->{article3.txt 7}
+benefits -->{article1.txt 1}
+distant -->{article2.txt 1}
+fields -->{article1.txt 1}
+field -->{article1.txt 1}
+discovers -->{article1.txt 1}
+automatically -->{article1.txt 1}
+renewable -->{article3.txt 1}
+increasingly -->{article1.txt 1}
+later -->{article2.txt 1}
+speech -->{article1.txt 1}
+about -->{article2.txt 1}
+set -->{article3.txt 1}
+method -->{article5.txt 1}
+improve -->{article1.txt 1}
+methane -->{article3.txt 1}
+emerge -->{article2.txt 1}
+is -->{article1.txt 3} {article2.txt 1} {article3.txt 1} {article4.txt 2} {article5.txt 1}
+probes -->{article2.txt 1}
+activities -->{article3.txt 1}
+been -->{article1.txt 1}
+challenges -->{article4.txt 1}
+the -->{article1.txt 5} {article2.txt 17} {article3.txt 5} {article4.txt 8} {article5.txt 16}
+large -->{article1.txt 1} {article4.txt 2}
+by -->{article1.txt 1} {article3.txt 2} {article4.txt 1} {article5.txt 1}
+healthcare -->{article1.txt 1}
+normally -->{article1.txt 1}
+units -->{article5.txt 1}
+landed -->{article2.txt 1}
+most -->{article2.txt 1}
+extremely -->{article1.txt 1}
+often -->{article2.txt 1} {article4.txt 1}
+s -->{article3.txt 1}
+usage -->{article4.txt 1}
+space -->{article2.txt 9} {article3.txt 1}
+investigation -->{article2.txt 1}
+together -->{article3.txt 1} {article5.txt 1}
+sustained -->{article2.txt 1}
+into -->{article2.txt 1} {article3.txt 1} {article4.txt 1} {article5.txt 2}
+distributed -->{article4.txt 1} {article5.txt 1}
+exploration -->{article2.txt 5}
+connected -->{article5.txt 1}
+shaping -->{article5.txt 1}
+scientists -->{article2.txt 1} {article3.txt 1}
+role -->{article2.txt 1} {article4.txt 1}
+twentieth -->{article2.txt 1} {article5.txt 1}
+world -->{article2.txt 1} {article5.txt 2}
+measures -->{article4.txt 1}
+satellites -->{article2.txt 2}
+burning -->{article3.txt 1}
+at -->{article2.txt 1} {article5.txt 1}
+energy -->{article3.txt 1}
+one -->{article2.txt 1} {article4.txt 1} {article5.txt 1}
+agencies -->{article2.txt 1}
+rules -->{article1.txt 1}
+program -->{article2.txt 1}
+developed -->{article5.txt 2}
+mars -->{article2.txt 3}
+traced -->{article5.txt 1}
+robotics -->{article2.txt 1}
+robotic -->{article2.txt 2}
+polar -->{article3.txt 1}
+create -->{article5.txt 1}
+which -->{article2.txt 1}
+back -->{article5.txt 1}
+while -->{article3.txt 1} {article4.txt 1}
+patterns -->{article1.txt 3} {article3.txt 1} {article4.txt 1}
+privacy -->{article1.txt 1}
+greenhouse -->{article3.txt 3}
+trends -->{article3.txt 1}
+that -->{article1.txt 3} {article3.txt 2} {article5.txt 4}
+cope -->{article3.txt 1}
+evidence -->{article2.txt 1} {article3.txt 1}
+private -->{article2.txt 1}
+moon -->{article2.txt 2}
+origins -->{article2.txt 1} {article5.txt 1}
+demonstrated -->{article2.txt 1} {article5.txt 1}
+rising -->{article3.txt 1}
+shifts -->{article3.txt 1}
+sustainable -->{article3.txt 1}
+international -->{article2.txt 1} {article3.txt 1}
+instead -->{article1.txt 1}
+discussion -->{article1.txt 1}
+perceive -->{article1.txt 1}
+visited -->{article2.txt 1}
+aim -->{article2.txt 1}
+continue -->{article2.txt 1}
+explore -->{article2.txt 1}
+solar -->{article2.txt 1} {article3.txt 1}
+reduced -->{article2.txt 1}
+reduce -->{article4.txt 1}
+engineering -->{article2.txt 1}
+planets -->{article2.txt 1}
+samples -->{article2.txt 1}
+knowledge -->{article2.txt 1}
+observe -->{article2.txt 1}
+layers -->{article1.txt 1}
+century -->{article2.txt 1} {article5.txt 1}
+galaxies -->{article2.txt 1}
+over -->{article5.txt 1}
+resilient -->{article5.txt 1}
+require -->{article1.txt 1}
+countries -->{article3.txt 1}
+tackling -->{article3.txt 1}
+essential -->{article3.txt 1} {article5.txt 1}
+occurring -->{article3.txt 1}
+cooperation -->{article2.txt 1} {article3.txt 1}
+communities -->{article3.txt 1}
+preparing -->{article3.txt 1}
+launch -->{article2.txt 1}
+involves -->{article3.txt 1}
+missions -->{article2.txt 3}
+transitioning -->{article3.txt 1}
+strategies -->{article3.txt 1}
+mitigation -->{article3.txt 2}
+awareness -->{article3.txt 1}
+range -->{article5.txt 1}
+tools -->{article1.txt 1}
+primary -->{article3.txt 1}
+changes -->{article3.txt 1}
+replacing -->{article1.txt 1}
+gases -->{article3.txt 2}
+contribute -->{article3.txt 1}
+were -->{article5.txt 1}
+atmosphere -->{article3.txt 1}
+sea -->{article3.txt 1}
+recent -->{article3.txt 1}
+shows -->{article3.txt 1}
+refers -->{article3.txt 1}
+weather -->{article3.txt 2}
+species -->{article3.txt 1}
+assist -->{article1.txt 1}
+targets -->{article3.txt 1}
+long -->{article3.txt 1}
+levels -->{article3.txt 1}
+cause -->{article3.txt 1}
+from -->{article1.txt 1} {article2.txt 1} {article3.txt 1}
+foundation -->{article4.txt 1}
+global -->{article3.txt 2} {article5.txt 1}
+uncover -->{article4.txt 1}
+caps -->{article3.txt 1}
+adaptation -->{article3.txt 2}
+agreements -->{article3.txt 1}
+industrial -->{article3.txt 1}
+deep -->{article1.txt 2}
+fossil -->{article3.txt 1}
+wind -->{article3.txt 1}
+deforestation -->{article3.txt 1}
+streaming -->{article5.txt 1}
+increased -->{article3.txt 1}
+processes -->{article3.txt 2}
+and -->{article1.txt 9} {article2.txt 11} {article3.txt 12} {article4.txt 5} {article5.txt 7}
+those -->{article1.txt 1}
+carbon -->{article3.txt 1}
+movies -->{article1.txt 1}
+dioxide -->{article3.txt 1}
+largely -->{article3.txt 1}
+sources -->{article3.txt 1}
+trap -->{article3.txt 1}
+emissions -->{article3.txt 3}
+heat -->{article3.txt 1}
+consequences -->{article3.txt 1}
+future -->{article1.txt 1} {article5.txt 1}
+play -->{article4.txt 1}
+encourage -->{article3.txt 1}
+networks -->{article1.txt 1} {article5.txt 3}
+impacts -->{article3.txt 1}
+escaping -->{article3.txt 1}
+gas -->{article3.txt 2}
+fuels -->{article3.txt 1}
+power -->{article3.txt 1}
+remarkable -->{article2.txt 1}
+it -->{article1.txt 1} {article2.txt 1} {article3.txt 1} {article5.txt 2}
+forced -->{article3.txt 1}
+driving -->{article1.txt 1}
+frequent -->{article3.txt 1}
+more -->{article3.txt 1}
+exchange -->{article5.txt 1}
+solving -->{article1.txt 1}
+events -->{article3.txt 1}
+communicate -->{article5.txt 1}
+modern -->{article1.txt 1} {article2.txt 1} {article3.txt 1} {article4.txt 1}
+glaciers -->{article3.txt 1}
+melting -->{article3.txt 1}
+capable -->{article1.txt 1}
+changing -->{article3.txt 1}
+adapt -->{article3.txt 1}
+solved -->{article4.txt 1}
+hash -->{article4.txt 1}
+environmental -->{article3.txt 1}
+ecosystems -->{article3.txt 1}
+policymakers -->{article3.txt 1}
+today -->{article2.txt 1} {article5.txt 1}
+history -->{article3.txt 1} {article5.txt 1}
+arise -->{article4.txt 1}
+concentration -->{article3.txt 1}
+milliseconds -->{article4.txt 1}
+vision -->{article1.txt 1}
+be -->{article4.txt 1} {article5.txt 1}
+generate -->{article4.txt 1}
+results -->{article4.txt 1}
+active -->{article1.txt 1}
+relevant -->{article4.txt 1}
+switching -->{article5.txt 1}
+grows -->{article4.txt 1}
+retrieve -->{article4.txt 1}
+engines -->{article4.txt 1}
+every -->{article4.txt 1}
+example -->{article4.txt 1}
+application -->{article4.txt 1}
+concerns -->{article4.txt 1}
+search -->{article2.txt 1} {article4.txt 2}
+nearly -->{article4.txt 1}
+billions -->{article4.txt 1}
+cloud -->{article5.txt 1}
+computing -->{article4.txt 1} {article5.txt 2}
+required -->{article4.txt 1}
+items -->{article4.txt 1}
+public -->{article3.txt 1}
+massive -->{article4.txt 1}
+solve -->{article4.txt 2}
+send -->{article2.txt 1}
+sorting -->{article4.txt 1}
+arrays -->{article4.txt 1}
+conditions -->{article3.txt 1}
+commonly -->{article4.txt 1}
+an -->{article4.txt 2} {article5.txt 1}
+establish -->{article2.txt 1}
+efficient -->{article4.txt 1}
+perform -->{article4.txt 1}
+form -->{article4.txt 1} {article5.txt 1}
+soil -->{article2.txt 1}
+choosing -->{article4.txt 1}
+computational -->{article4.txt 1}

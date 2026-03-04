@@ -1,0 +1,13 @@
+Title : Computer Algorithms
+
+Algorithms are step by step procedures used to solve problems or perform computations. In computer science, algorithms form the foundation of software systems and data processing techniques.
+
+An efficient algorithm can dramatically reduce the time required to solve a problem. For example, sorting algorithms organize data into a specific order, while search algorithms locate particular items within large datasets.
+
+One of the central concerns in algorithm design is computational complexity. Complexity analysis measures how the running time or memory usage of an algorithm grows as the size of the input increases. Big O notation is commonly used to describe these growth rates.
+
+Data structures such as arrays, linked lists, trees, and hash tables play a crucial role in algorithm performance. Choosing the appropriate data structure often determines how efficiently a problem can be solved.
+
+Modern computing relies on algorithms in nearly every application. Search engines index billions of documents and retrieve relevant results in milliseconds. Machine learning algorithms analyze massive datasets to uncover patterns and generate predictions.
+
+The study of algorithms continues to evolve as new challenges arise in areas such as distributed systems, artificial intelligence, and large scale data processing.
