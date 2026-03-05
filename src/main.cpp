@@ -5,10 +5,12 @@
 #include <chrono>
 #include <unordered_map>
 #include <string>
+#include <cmath>
 
 // User defines Headers
 #include "../include/tokenizer.h"
 #include "../include/frequency.h"
+#include "../include/serialization.h"
 
 using namespace std;
 #define nl '\n'
@@ -19,6 +21,7 @@ using namespace std;
 // Inverted Index is a data structure use to find which files containes that specific word used in search engine,dbms
 unordered_map<string,vector<pair<int,int>>>inverted_index;
 vector<string>documents;
+vector<int>doc_norms;
 
 /*-------------------------------------------------------------------------*/
 int main() {
@@ -36,7 +39,6 @@ int main() {
 
     for(int i =0;i<(int)fileNames.size();i++){
         const string filename = "../data/"+fileNames[i];
-        cout<<"filename :"<<filename<<nl;
         ifstream file(filename);
         string s = "";
         string line;
@@ -45,21 +47,9 @@ int main() {
             s += nl;
         }
 
-        auto start = chrono::high_resolution_clock::now();
         vector<string> tokens = tokenizer(s);
-        auto end = chrono::high_resolution_clock::now();
 
-        // for(auto x:tokens){
-        //     cout<<x<<" ";
-        // }
-        // cout<<nl;
-
-        auto freqstart = chrono::high_resolution_clock::now();
         unordered_map<string,int> frequencies = frequency(tokens);
-        auto freqend = chrono::high_resolution_clock::now();
-
-        chrono::duration<double, milli> tokenizer_time = end - start;
-        chrono::duration<double,milli> frequency_time = freqend - freqstart;
 
         // need to calculate inverted_index
         // which will store text_word = {file,frequency}
@@ -72,41 +62,50 @@ int main() {
             inverted_index[word.first].push_back({i,word.second});
         }
 
-        auto& fr = frequencies;
-        cout << nl;
-
-        /* Bench Marks Displaying*/
-        cout << "================ HASH TABLE BENCHMARK ================" << nl << nl;
-
-        cout << "Input File        : " << filename << nl;
-        cout << "Tokens Processed  : " << tokens.size() << nl;
-        cout << "Unique Words      : " << fr.size() << nl;
-
-        cout << nl;
-        cout << "--------------- Tokenization ----------------" << nl;
-        cout << "Tokenizer Time    : " << tokenizer_time.count() << " ms" << nl;
-
-        cout << nl;
-        cout << "--------------- Frequency Build -------------" << nl;
-        cout << "Frequency Time    : " << frequency_time.count() << " ms" << nl;
-
-        cout << nl;
-        cout << "--------------- Hash Table Stats ------------" << nl;
-        cout << "Bucket Count      : " << fr.bucket_count() << nl;
-        cout << "Load Factor       : " << fr.load_factor() << nl;
-        cout << "Max Load Factor   : " << fr.max_load_factor() << nl;
-
-        cout << nl;
-        cout << "======================================================" << nl;
-    }
-
-    for(auto &x:inverted_index){
-        cout<<x.first<<" "<<"-->";
-        for(auto &y:x.second){
-            cout<<"{"<<documents[y.first]<<" "<<y.second<<"}"<<" ";
+        // similarity between 2 vectors - dot product/resultant of 2 vactor
+        // storing document lengths
+        double sum = 0;
+        for(auto &chunks: frequencies){
+            sum += (chunks.second * chunks.second);
         }
-        cout<<nl;
-    }
+        doc_norms.push_back(sqrt(sum));
 
+    }
+    serialize(inverted_index);
     return 0;
 }
+/*
+  auto start = chrono::high_resolution_clock::now();
+  auto end = chrono::high_resolution_clock::now();
+  auto freqstart = chrono::high_resolution_clock::now();
+  auto freqend = chrono::high_resolution_clock::now();
+  chrono::duration<double, milli> tokenizer_time = end - start;
+  chrono::duration<double,milli> frequency_time = freqend - freqstart;
+
+  auto& fr = frequencies;
+
+
+Bench Marks Displaying
+ cout << "================ HASH TABLE BENCHMARK ================" << nl << nl;
+
+ cout << "Input File        : " << filename << nl;
+ cout << "Tokens Processed  : " << tokens.size() << nl;
+ cout << "Unique Words      : " << fr.size() << nl;
+
+ cout << nl;
+ cout << "--------------- Tokenization ----------------" << nl;
+ cout << "Tokenizer Time    : " << tokenizer_time.count() << " ms" << nl;
+
+ cout << nl;
+ cout << "--------------- Frequency Build -------------" << nl;
+ cout << "Frequency Time    : " << frequency_time.count() << " ms" << nl;
+
+ cout << nl;
+ cout << "--------------- Hash Table Stats ------------" << nl;
+ cout << "Bucket Count      : " << fr.bucket_count() << nl;
+ cout << "Load Factor       : " << fr.load_factor() << nl;
+ cout << "Max Load Factor   : " << fr.max_load_factor() << nl;
+
+ cout << nl;
+ cout << "======================================================" << nl;
+ */

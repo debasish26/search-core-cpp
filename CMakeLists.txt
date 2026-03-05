@@ -8,6 +8,7 @@ add_executable(app
     src/main.cpp
     src/tokenizer.cpp
     src/frequency.cpp
+    src/serialization.cpp
 )
 
 target_include_directories(app PRIVATE include)
