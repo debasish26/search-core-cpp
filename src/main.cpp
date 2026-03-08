@@ -33,11 +33,13 @@ int main() {
     while(getline(txtFiles,x)){
         fileNames.push_back(x);
     }
-
+    
+    // mapping each document with its doc_id which is in my case simply its array index
     for(int i =0;i<(int)fileNames.size();i++){
         documents.push_back(fileNames[i]);
-    }
-
+    } 
+    
+    //reading all the files one by one and perfrom operations
     for(int i =0;i<(int)fileNames.size();i++){
         const string filename = "../data/"+fileNames[i];
         ifstream file(filename);
@@ -47,16 +49,20 @@ int main() {
             s += line;
             s += nl;
         }
-
+        
+        
+        // tokenized the document split it in word array or document vector
         auto start = chrono::high_resolution_clock::now();
         vector<string> tokens = tokenizer(s);
         auto end = chrono::high_resolution_clock::now();
         
-
+        // for the word array i created i calculated each word frequency 
         auto freqstart = chrono::high_resolution_clock::now();
         unordered_map<string,int> frequencies = frequency(tokens);
         auto freqend = chrono::high_resolution_clock::now();
 
+        
+        // calculated invert index (its a global vector) which store which word appear in which documents with there frequency 
         // need to calculate inverted_index
         // which will store text_word = {file,frequency}
         // the = {doc0,2},{doc1,3}
@@ -68,13 +74,23 @@ int main() {
             inverted_index[word.first].push_back({i,word.second});
         }
 
-        // similarity between 2 vectors - dot product/resultant of 2 vactor
+        // similarity between 2 vectors - dot product/resulatnt of 2 vectors
+        // resultant of 2 vectors = sqrt((ai)^2 + (a2)^2 + ..... (an)^2) - this is called doc_norms or the normalized form for the vector so that cosine similarity calculation will be easy
         // storing document lengths
         double sum = 0;
         for(auto &chunks: frequencies){
             sum += (chunks.second * chunks.second);
         }
         doc_norms.push_back(sqrt(sum));
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         chrono::duration<double,milli> tokenizer_time = end - start;
         chrono::duration<double,milli> frequency_time = freqend - freqstart;
