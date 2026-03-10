@@ -10,6 +10,8 @@ add_executable(app
     src/frequency.cpp
     src/serialization.cpp
     src/benchmarks.cpp
+    src/docnorms.cpp
+    src/tfIdfcalc.cpp
 )
 
 target_include_directories(app PRIVATE include)
