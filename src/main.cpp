@@ -31,7 +31,6 @@ unordered_map<string,double>idf;
 unordered_map<int, unordered_map<string, double>>tfIdf;
 int NoOfFiles;
 
-
 /*-------------------------------------------------------------------------*/
 int main() {
     vector<string>fileNames;

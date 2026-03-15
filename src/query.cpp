@@ -68,22 +68,15 @@ void query(){
         scores[doc_id] =  scores[doc_id]/(doc_magnitude[doc_id] * q_mag);
     }
 
-    vector<double>score;
-    for(auto &doc:scores){
-        score.push_back(doc.second);
-    }
-
-    sort(score.begin(),score.end(),greater<>());
-
     cout << "\n===== SEARCH RESULTS =====\n";
-    for(int i =0;i<score.size();i++){
-        cout<<documents[i]<<" "<<"->"<<" "<<score[i]<<nl;
+    for(auto &doc:scores){
+        cout<<documents[doc.first]<<" "<<"->"<<" "<<doc.second<<nl;
     }
 }
 
 /*
  * need to store for each document need to calculate its value then store it
- *
+ * 
  *
  *
  */
