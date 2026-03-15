@@ -4,8 +4,9 @@
 #include <cmath>
 
 using namespace std;
+
 unordered_map<string, double>i;
-unordered_map<string,double>idfCalc(unordered_map<string,vector<pair<int,int>>> &inverted_index,int &n){
+unordered_map<string,double>idfCalc(unordered_map<string,vector<pair<int,int>>> &inverted_index,int n){
     unordered_map<string,double> idf;
     for(auto &word: inverted_index){
         int df = word.second.size();

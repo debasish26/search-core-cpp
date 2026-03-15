@@ -1,19 +1,20 @@
 // System Headers
+#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <vector>
 #include <chrono>
 #include <unordered_map>
 #include <string>
-#include <cmath>
 
 // User defines Headers
 #include "../include/tokenizer.h"
 #include "../include/frequency.h"
 #include "../include/serialization.h"
 #include "../include/tfIdfcalc.h"
-#include "../include/docnorms.h"
+#include "../include/docmagnitude.h"
 #include "../include/benchmarks.h"
+#include "../include/query.h"
 
 using namespace std;
 #define nl '\n'
@@ -24,7 +25,7 @@ using namespace std;
 // Inverted Index is a data structure use to find which files containes that specific word used in search engine,dbms
 unordered_map<string,vector<pair<int,int>>>inverted_index;
 vector<string>documents; // stores document name ans assign docId as the index
-vector<double>doc_norms;
+vector<double>doc_magnitude;
 unordered_map<int, unordered_map<string, int>>frequencies;
 unordered_map<string,double>idf;
 unordered_map<int, unordered_map<string, double>>tfIdf;
@@ -64,7 +65,6 @@ int main() {
             s += nl;
         }
 
-
         // tokenized the document split it in word array or document vector
         auto start = chrono::high_resolution_clock::now();
         vector<string> tokens = tokenizer(s);
@@ -75,7 +75,6 @@ int main() {
         unordered_map<string,int> frequencie = frequency(tokens);
         auto freqend = chrono::high_resolution_clock::now();
         frequencies[doc_id] = frequencie;
-
 
         // calculated invert index (its a global vector) which store which word appear in which documents with there frequency
         // need to calculate inverted_index
@@ -92,7 +91,7 @@ int main() {
         chrono::duration<double,milli> tokenizer_time = end - start;
         chrono::duration<double,milli> frequency_time = freqend - freqstart;
 
-        benchmarks(filename, tokens.size(), frequencie, tokenizer_time, frequency_time);
+        //benchmarks(filename, tokens.size(), frequencie, tokenizer_time, frequency_time);
 
     }
 
@@ -112,56 +111,64 @@ int main() {
 
     idf = idfCalc(inverted_index,NoOfFiles);
 
-    cout << "\n====== IDF VALUES ======" << nl;
+    // cout << "\n====== IDF VALUES ======" << nl;
 
-    for(auto &term : idf){
-        cout << term.first << " -> " << term.second << nl;
-    }
+    // for(auto &term : idf){
+    //     cout << term.first << " -> " << term.second << nl;
+    // }
 
-    cout << "========================\n" << nl;
-
+    //cout << "========================\n" << nl;
 
     tfIdf = tfIdfCalc(frequencies);
 
-    cout << "\n====== TF-IDF VECTORS ======" << nl;
+    //cout << "\n====== TF-IDF VECTORS ======" << nl;
 
-    for(auto &doc : tfIdf){
+    // for(auto &doc : tfIdf){
 
-        int doc_id = doc.first;
+    //     int doc_id = doc.first;
 
-        cout << "Doc " << doc_id << " (" << documents[doc_id] << ")" << nl;
+    //     cout << "Doc " << doc_id << " (" << documents[doc_id] << ")" << nl;
 
-        for(auto &term : doc.second){
-            cout << "   " << term.first << " -> " << term.second << nl;
-        }
+    //     for(auto &term : doc.second){
+    //         cout << "   " << term.first << " -> " << term.second << nl;
+    //     }
 
-        cout << nl;
-    }
+    //     cout << nl;
+    // }
 
-    cout << "============================\n" << nl;
+    // cout << "============================\n" << nl;
 
     // similarity between 2 vectors - dot product/resulatnt of 2 vectors
     // resultant of 2 vectors = sqrt((ai)^2 + (a2)^2 + ..... (an)^2) - this is called doc_norms or the normalized form for the vector so that cosine similarity calculation will be easy
     // storing document lengths
-    doc_norms = doc_norms_calc(tfIdf);
+    doc_magnitude = doc_magn_calc(tfIdf);
 
-    cout << "\n====== DOCUMENT NORMS ======" << nl;
+    // cout << "\n====== DOCUMENT NORMS ======" << nl;
 
-    for(int i = 0; i < doc_norms.size(); i++){
-        cout << "Doc " << i << " (" << documents[i] << ") -> "
-             << doc_norms[i] << nl;
-    }
+    // for(int i = 0; i < doc_magnitude.size(); i++){
+    //     cout << "Doc " << i << " (" << documents[i] << ") -> "
+    //          << doc_magnitude[i] << nl;
+    // }
 
-    cout << "============================\n" << nl;
+    // cout << "============================\n" << nl;
+
+    query();
 
     return 0;
 }
+
 /*
  * dog
  * tokens = dog
  * frequency = dog : 1
  * frequencies = 0 : {dog : 1}
  * inverted_index = dog : {0,1}
+ * calculate weight hold for each document and created a document vector
+ * calculated document vector for each document
+ * make query.cpp and calculated its vector magnitude
+ * now need to calculate dot product
+ * but dimension of q vector and documents are different then
+ *
  *
  *
  *

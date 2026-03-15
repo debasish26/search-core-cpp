@@ -5,7 +5,7 @@
 
 using namespace std;
 
-vector<double>doc_norms_calc(unordered_map<int, unordered_map<string, double>> &tfIdf){
+vector<double>doc_magn_calc(unordered_map<int, unordered_map<string, double>> &tfIdf){
     vector<double>doc_norms;
     doc_norms.resize(tfIdf.size());
     for(auto &doc:tfIdf){
@@ -17,6 +17,6 @@ vector<double>doc_norms_calc(unordered_map<int, unordered_map<string, double>> &
         }
         doc_norms[doc_id] = sqrt(sum);
     }
-    
+
     return doc_norms;
 }
