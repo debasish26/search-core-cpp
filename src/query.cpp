@@ -67,10 +67,16 @@ void query(){
         int doc_id = score.first;
         scores[doc_id] =  scores[doc_id]/(doc_magnitude[doc_id] * q_mag);
     }
+    vector<pair<double,int>>sc;
+    for(auto &s:scores){
+        sc.push_back({s.second,s.first});
+    }
+    
+    sort(sc.rbegin(),sc.rend());
 
     cout << "\n===== SEARCH RESULTS =====\n";
-    for(auto &doc:scores){
-        cout<<documents[doc.first]<<" "<<"->"<<" "<<doc.second<<nl;
+    for(auto &doc:sc){
+        cout<<documents[doc.second]<<" "<<"->"<<" "<<doc.first<<nl;
     }
 }
 
