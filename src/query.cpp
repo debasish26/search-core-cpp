@@ -10,6 +10,7 @@
 
 #include "../include/tokenizer.h"
 #include "../include/frequency.h"
+#include "../include/heapOptmization.h"
 
 using namespace std;
 #define nl '\n'
@@ -72,12 +73,13 @@ void query(){
         sc.push_back({s.second,s.first});
     }
     
-    sort(sc.rbegin(),sc.rend());
-
-    cout << "\n===== SEARCH RESULTS =====\n";
-    for(auto &doc:sc){
-        cout<<documents[doc.second]<<" "<<"->"<<" "<<doc.first<<nl;
+    vector<pair<double,int>> sortedScore = heapOptmization(sc);
+    sort(sortedScore.begin(),sortedScore.end(),greater<>());
+    
+    for(auto &s:sortedScore){
+        cout<<documents[s.second]<<" -> "<<s.first<<nl;
     }
+    
 }
 
 /*

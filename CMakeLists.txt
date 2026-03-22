@@ -13,6 +13,7 @@ add_executable(app
     src/docmagnitude.cpp
     src/tfIdfcalc.cpp
     src/query.cpp
+    src/heapOptmization.cpp
 )
 
 target_include_directories(app PRIVATE include)
