@@ -25,8 +25,9 @@
 using namespace std;
 #define nl '\n'
 
-void serialize(unordered_map<string,vector<pair<int,int>>> &inverted_index){
-    ofstream out("../index.bin",ios::binary);
+void serialize(unordered_map<string,vector<pair<int,int>>> &inverted_index, string filename){
+    ofstream out(filename, ios::binary);
+
     for(auto &x:inverted_index){
         string word = x.first;
         auto &posting = x.second;
@@ -44,5 +45,27 @@ void serialize(unordered_map<string,vector<pair<int,int>>> &inverted_index){
         }
     }
 
-    cout<<"Bin created"<<nl;
+    cout<<"Bin created: "<<filename<<nl;
+}
+
+void save_meta(unordered_map<string,int> &df, int total_docs, string filename){
+    ofstream out(filename, ios::binary);
+
+    out.write((char*)&total_docs, sizeof(total_docs));
+
+    int size = df.size();
+    out.write((char*)&size, sizeof(size));
+
+    for(auto &x: df){
+        string word = x.first;
+        int freq = x.second;
+
+        int len = word.size();
+        out.write((char*)&len, sizeof(len));
+        out.write(word.c_str(), len);
+
+        out.write((char*)&freq, sizeof(freq));
+    }
+
+    cout<<"Meta saved: "<<filename<<nl;
 }

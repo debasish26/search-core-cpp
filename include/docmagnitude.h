@@ -1,4 +1,4 @@
-#ifndef DOCMAGNITUDE_H
+    #ifndef DOCMAGNITUDE_H
 #define DOCMAGNITUDE_H
 
 #include <vector>

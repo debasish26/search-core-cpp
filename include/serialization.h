@@ -4,5 +4,6 @@
 #include <vector>
 #include<string>
 using namespace std;
-void serialize(unordered_map<string,vector<pair<int,int>>> &inverted_index);
+void serialize(unordered_map<string,vector<pair<int,int>>> &inverted_index,string filename);
+void save_meta(unordered_map<string,int> &df, int total_docs,string filename);
 #endif

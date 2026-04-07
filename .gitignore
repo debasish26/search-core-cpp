@@ -1,60 +1,60 @@
 # =========================
-# Build directories
+# Large datasets (VERY IMPORTANT)
 # =========================
-build/
-cmake-build-*/
+data/wikipedia/
+*.xml
+*.bz2
+*.gz
 
 # =========================
-# CMake files
+# Database files (~31 GB)
 # =========================
-CMakeFiles/
+*.db
+*.sqlite
+*.sqlite3
+testdb.db
+
+# =========================
+# Segment index files (~6 GB total, 60 files)
+# =========================
+segments/
+*.bin
+
+# =========================
+# Build directory
+# =========================
+build/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
-compile_commands.json
 
 # =========================
-# Compiled binaries
+# Executables
 # =========================
+app
+app.exe
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
 # =========================
-# Object files
+# Object / compiled files
 # =========================
 *.o
-*.obj
-*.so
 *.a
+*.so
 *.lib
 *.dll
-*.dylib
 
 # =========================
-# Debug files
+# Editor / tooling cache
 # =========================
-*.log
-
-# =========================
-# macOS
-# =========================
-.DS_Store
-
-# =========================
-# VS Code
-# =========================
+.cache/
+.clangd
 .vscode/
-
-# =========================
-# CLion
-# =========================
 .idea/
 
 # =========================
-# Vim
+# OS-specific junk
 # =========================
-*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

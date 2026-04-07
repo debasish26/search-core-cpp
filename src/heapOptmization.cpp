@@ -65,11 +65,11 @@ class Minheap{
         }
 };
 
-vector<pair<double,int>> heapOptmization(vector<pair<double,int>> &sc){
+vector<pair<double,int>> heapOptmization(vector<pair<double,int>> &sc,int k){
     Minheap h;
 
     for(auto &x:sc){
-        if(h.sz() < 3){
+        if(h.sz() < k){
             h.add(x);
         }
         else if(x.first > h.top().first){ 
