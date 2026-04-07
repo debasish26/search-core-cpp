@@ -1,3 +1,0 @@
-CompileFlags:
-  Compiler: C:/msys64/mingw64/bin/g++.exe
-  Add: [-std=c++17]
